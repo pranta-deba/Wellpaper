@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("cool-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: whitesmoke;
+}
+header{
+    padding: 0 120px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+header nav .logo h1{
+    font-size: 2rem;
+    color: chartreuse;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+header nav .logo h1 span{
+    color: whitesmoke;
+    font-size: 1rem;
+}
+header nav .menu{
+    display: flex;
+    gap: 50px;
+    cursor: pointer;
+}
+header nav .menu li{
+    list-style: none;
+    font-weight: 500;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+header nav .menu li.active{
+    color: chartreuse;
+}
+
+.banner{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 16px;
+}
+.left-side , .right-side{
+    width: 50%;
+}
+.left-side img{
+    width: 80%;
+    border-radius: 16px;
+    border: 3px solid chartreuse;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.box-1,.box-2{
+    border: 2px solid chartreuse;
+    text-align: center;
+    height: 30%;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box-1 p, .box-2 p{
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+    padding: 10px;
+    border-bottom: 2px solid chartreuse;
+}
+.box-2{
+    height: 55%;
+}
